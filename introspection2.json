@@ -1,0 +1,1379 @@
+{
+  "distrib": {
+    "crm_lead.call_status": [
+      {
+        "v": "diabetes_interested_in_webinar",
+        "n": "72839"
+      },
+      {
+        "v": "follow_up",
+        "n": "43144"
+      },
+      {
+        "v": "new",
+        "n": "35373"
+      },
+      {
+        "v": "dnp",
+        "n": "24465"
+      },
+      {
+        "v": "not_registered",
+        "n": "14953"
+      },
+      {
+        "v": "no_sugar_not_interested",
+        "n": "12964"
+      },
+      {
+        "v": "disqualified",
+        "n": "12235"
+      },
+      {
+        "v": "next_batch",
+        "n": "9579"
+      },
+      {
+        "v": "diabetes_not_interested_in_webinar",
+        "n": "9315"
+      },
+      {
+        "v": "other_language",
+        "n": "8080"
+      },
+      {
+        "v": "just_for_knowledge",
+        "n": "4102"
+      },
+      {
+        "v": "no_sugar_interested",
+        "n": "4019"
+      },
+      {
+        "v": "already_paid",
+        "n": "1120"
+      },
+      {
+        "v": "payment_failed",
+        "n": "131"
+      }
+    ],
+    "crm_lead.walkin_call_status": [
+      {
+        "v": "new",
+        "n": "247539"
+      },
+      {
+        "v": "rnr",
+        "n": "1076"
+      },
+      {
+        "v": "follow_up",
+        "n": "620"
+      },
+      {
+        "v": "appointment_fixed_direct",
+        "n": "606"
+      },
+      {
+        "v": "call_back",
+        "n": "567"
+      },
+      {
+        "v": "not_interested",
+        "n": "377"
+      },
+      {
+        "v": "visited",
+        "n": "364"
+      },
+      {
+        "v": "not_registered",
+        "n": "186"
+      },
+      {
+        "v": "already_paid",
+        "n": "129"
+      },
+      {
+        "v": "dnd",
+        "n": "125"
+      },
+      {
+        "v": "line_busy",
+        "n": "124"
+      },
+      {
+        "v": "no_sugar",
+        "n": "97"
+      },
+      {
+        "v": "appointment_fixed_zoom",
+        "n": "89"
+      },
+      {
+        "v": "out_of_service",
+        "n": "88"
+      },
+      {
+        "v": "disqualified",
+        "n": "76"
+      },
+      {
+        "v": "invalid",
+        "n": "75"
+      },
+      {
+        "v": "switched_off",
+        "n": "62"
+      },
+      {
+        "v": "not_visited",
+        "n": "42"
+      },
+      {
+        "v": "future_follow_up",
+        "n": "36"
+      },
+      {
+        "v": "confirmed",
+        "n": "19"
+      },
+      {
+        "v": "wrong_number",
+        "n": "13"
+      },
+      {
+        "v": "payment_failed",
+        "n": "7"
+      },
+      {
+        "v": "rescheduled",
+        "n": "2"
+      }
+    ],
+    "crm_lead.walkin_visit_status": [
+      {
+        "v": "visited",
+        "n": "3"
+      }
+    ],
+    "crm_lead.walkin_appt_confirm_status": [
+      {
+        "v": "open",
+        "n": "252254"
+      },
+      {
+        "v": "confirmed",
+        "n": "22"
+      },
+      {
+        "v": "need_confirm",
+        "n": "21"
+      },
+      {
+        "v": "not_interested",
+        "n": "13"
+      },
+      {
+        "v": "not_responding",
+        "n": "8"
+      },
+      {
+        "v": "rescheduled",
+        "n": "1"
+      }
+    ],
+    "crm_lead.walkin_visited_radio": [
+      {
+        "v": "open",
+        "n": "252300"
+      },
+      {
+        "v": "visited",
+        "n": "19"
+      }
+    ],
+    "crm_lead.sugar_level": [
+      {
+        "v": "150-250_sugar_level",
+        "n": "109596"
+      },
+      {
+        "v": "above_250_sugar_level",
+        "n": "79660"
+      },
+      {
+        "v": "no_sugar",
+        "n": "36304"
+      },
+      {
+        "v": "other",
+        "n": "104"
+      }
+    ],
+    "crm_lead.haf_status": [
+      {
+        "v": "open",
+        "n": "252316"
+      },
+      {
+        "v": "done",
+        "n": "3"
+      }
+    ],
+    "crm_lead.bdm_audit_status": [
+      {
+        "v": "open",
+        "n": "252319"
+      }
+    ],
+    "crm_lead.l1_price_type": [],
+    "crm_lead.batch_code_full": [
+      {
+        "v": "AS165 NONWA",
+        "n": "3623"
+      },
+      {
+        "v": "AS185 NONWA",
+        "n": "2882"
+      },
+      {
+        "v": "AS189 NONWA",
+        "n": "2856"
+      },
+      {
+        "v": "AS195 NONWA",
+        "n": "2755"
+      },
+      {
+        "v": "AS207 NONWA",
+        "n": "2520"
+      },
+      {
+        "v": "AS167 NONWA",
+        "n": "2384"
+      },
+      {
+        "v": "AS208 NONWA",
+        "n": "2361"
+      },
+      {
+        "v": "AS181 Re-2",
+        "n": "2355"
+      },
+      {
+        "v": "AS197 NONWA",
+        "n": "2341"
+      },
+      {
+        "v": "AS194 NONWA",
+        "n": "2258"
+      },
+      {
+        "v": "AS205 NONWA",
+        "n": "2137"
+      },
+      {
+        "v": "AS191 NONWA",
+        "n": "2121"
+      },
+      {
+        "v": "AS173 WA",
+        "n": "2066"
+      },
+      {
+        "v": "AS159 NONWA",
+        "n": "2064"
+      },
+      {
+        "v": "AS166 NONWA",
+        "n": "2055"
+      },
+      {
+        "v": "AS173 NONWA",
+        "n": "2036"
+      },
+      {
+        "v": "AS177 WA",
+        "n": "2027"
+      },
+      {
+        "v": "AS191 WA",
+        "n": "2008"
+      },
+      {
+        "v": "AS184 NONWA",
+        "n": "1980"
+      },
+      {
+        "v": "AS199 NONWA",
+        "n": "1955"
+      },
+      {
+        "v": "AS206 NONWA",
+        "n": "1953"
+      },
+      {
+        "v": "AS177 NONWA",
+        "n": "1933"
+      },
+      {
+        "v": "AS140FBNAWA",
+        "n": "1883"
+      },
+      {
+        "v": "AS195 WA",
+        "n": "1880"
+      },
+      {
+        "v": "AS190 NONWA",
+        "n": "1873"
+      },
+      {
+        "v": "AS171 WA",
+        "n": "1832"
+      },
+      {
+        "v": "AS145FBNAWA",
+        "n": "1829"
+      },
+      {
+        "v": "AS196 NONWA",
+        "n": "1820"
+      },
+      {
+        "v": "AS179 WA",
+        "n": "1808"
+      },
+      {
+        "v": "AS169 NONWA",
+        "n": "1806"
+      }
+    ],
+    "crm_lead.access_batch_code": [
+      {
+        "v": "MHS44",
+        "n": "29"
+      },
+      {
+        "v": "MHS42",
+        "n": "26"
+      },
+      {
+        "v": "MHS48",
+        "n": "24"
+      },
+      {
+        "v": "MHS60",
+        "n": "22"
+      },
+      {
+        "v": "MHS52",
+        "n": "20"
+      },
+      {
+        "v": "MHS40",
+        "n": "20"
+      },
+      {
+        "v": "MHS61",
+        "n": "18"
+      },
+      {
+        "v": "189",
+        "n": "18"
+      },
+      {
+        "v": "196",
+        "n": "18"
+      },
+      {
+        "v": "154",
+        "n": "18"
+      },
+      {
+        "v": "MHS57",
+        "n": "18"
+      },
+      {
+        "v": "194",
+        "n": "17"
+      },
+      {
+        "v": "MHS38",
+        "n": "17"
+      },
+      {
+        "v": "191",
+        "n": "16"
+      },
+      {
+        "v": "MHS58",
+        "n": "15"
+      },
+      {
+        "v": "MHS56",
+        "n": "15"
+      },
+      {
+        "v": "153",
+        "n": "15"
+      },
+      {
+        "v": "MHS46",
+        "n": "14"
+      },
+      {
+        "v": "185",
+        "n": "14"
+      },
+      {
+        "v": "MHS54",
+        "n": "14"
+      },
+      {
+        "v": "162",
+        "n": "14"
+      },
+      {
+        "v": "MHS37",
+        "n": "13"
+      },
+      {
+        "v": "MHS43",
+        "n": "13"
+      },
+      {
+        "v": "193",
+        "n": "13"
+      },
+      {
+        "v": "160",
+        "n": "13"
+      },
+      {
+        "v": "158",
+        "n": "12"
+      },
+      {
+        "v": "DS155",
+        "n": "12"
+      },
+      {
+        "v": "198",
+        "n": "12"
+      },
+      {
+        "v": "181",
+        "n": "11"
+      },
+      {
+        "v": "195",
+        "n": "11"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "id": 1,
+      "name": "New",
+      "sequence": 1,
+      "is_won": null
+    },
+    {
+      "id": 2,
+      "name": "Qualified",
+      "sequence": 2,
+      "is_won": null
+    },
+    {
+      "id": 3,
+      "name": "Proposition",
+      "sequence": 3,
+      "is_won": null
+    },
+    {
+      "id": 4,
+      "name": "Won",
+      "sequence": 70,
+      "is_won": true
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": {
+        "en_US": "Sales"
+      }
+    },
+    {
+      "id": 2,
+      "name": {
+        "en_US": "Website"
+      }
+    },
+    {
+      "id": 3,
+      "name": {
+        "en_US": "Point of Sale"
+      }
+    },
+    {
+      "id": 4,
+      "name": {
+        "en_US": "eBay"
+      }
+    },
+    {
+      "id": 7,
+      "name": {
+        "en_US": "Offline Sales Team"
+      }
+    },
+    {
+      "id": 8,
+      "name": {
+        "en_US": "Online Sales Team - Web"
+      }
+    },
+    {
+      "id": 11,
+      "name": {
+        "en_US": "Online Sales Team - FB"
+      }
+    },
+    {
+      "id": 12,
+      "name": {
+        "en_US": "NSI Online Team"
+      }
+    },
+    {
+      "id": 13,
+      "name": {
+        "en_IN": "Paid Team",
+        "en_US": "NSI Offline Team"
+      }
+    },
+    {
+      "id": 14,
+      "name": {
+        "en_US": "Walkin Callers Team"
+      }
+    },
+    {
+      "id": 15,
+      "name": {
+        "en_US": "Walkin Coach Team"
+      }
+    }
+  ],
+  "sources": "ERR operator does not exist: character varying ->> unknown",
+  "healthCoaches": [
+    {
+      "id": 262,
+      "login": "deepakmuthuraj.orka@gmail.com",
+      "name": "Deepak"
+    },
+    {
+      "id": 257,
+      "login": "dharshinip.mhs@gmail.com",
+      "name": "Dharshini"
+    },
+    {
+      "id": 256,
+      "login": "lavanya.mhs@gmail.com",
+      "name": "K . Lavanya"
+    },
+    {
+      "id": 265,
+      "login": "pavithra1011.mhs@gmail.com",
+      "name": "Pavithra"
+    }
+  ],
+  "salespersons": [
+    {
+      "id": 283,
+      "salesperson": "Priyadharshini",
+      "leads_30d": "660"
+    },
+    {
+      "id": 281,
+      "salesperson": "vasanthi",
+      "leads_30d": "577"
+    },
+    {
+      "id": 255,
+      "salesperson": "Gayathri",
+      "leads_30d": "521"
+    },
+    {
+      "id": 301,
+      "salesperson": "Gayathri L",
+      "leads_30d": "430"
+    },
+    {
+      "id": 288,
+      "salesperson": "Deepika",
+      "leads_30d": "394"
+    },
+    {
+      "id": 210,
+      "salesperson": "Surya",
+      "leads_30d": "378"
+    },
+    {
+      "id": 302,
+      "salesperson": "Mathupreethi",
+      "leads_30d": "372"
+    },
+    {
+      "id": 185,
+      "salesperson": "Madhubala",
+      "leads_30d": "355"
+    },
+    {
+      "id": 184,
+      "salesperson": "Keerthika",
+      "leads_30d": "302"
+    },
+    {
+      "id": 256,
+      "salesperson": "K . Lavanya",
+      "leads_30d": "300"
+    },
+    {
+      "id": 201,
+      "salesperson": "Pushpa",
+      "leads_30d": "296"
+    },
+    {
+      "id": 199,
+      "salesperson": "Sabitha",
+      "leads_30d": "291"
+    },
+    {
+      "id": 295,
+      "salesperson": "Priyanka A",
+      "leads_30d": "290"
+    },
+    {
+      "id": 282,
+      "salesperson": "Subalakshmi",
+      "leads_30d": "290"
+    },
+    {
+      "id": 173,
+      "salesperson": "Joe",
+      "leads_30d": "272"
+    },
+    {
+      "id": 168,
+      "salesperson": "Dilshath",
+      "leads_30d": "250"
+    },
+    {
+      "id": 257,
+      "salesperson": "Dharshini",
+      "leads_30d": "237"
+    },
+    {
+      "id": 203,
+      "salesperson": "Andrew",
+      "leads_30d": "218"
+    },
+    {
+      "id": 200,
+      "salesperson": "Sangeetha",
+      "leads_30d": "211"
+    },
+    {
+      "id": 296,
+      "salesperson": "Divya",
+      "leads_30d": "205"
+    },
+    {
+      "id": 206,
+      "salesperson": "Esther",
+      "leads_30d": "202"
+    },
+    {
+      "id": 164,
+      "salesperson": "Aakash",
+      "leads_30d": "191"
+    },
+    {
+      "id": 280,
+      "salesperson": "reenusree",
+      "leads_30d": "176"
+    },
+    {
+      "id": 181,
+      "salesperson": "Kaviya  Sri",
+      "leads_30d": "163"
+    },
+    {
+      "id": 186,
+      "salesperson": "Madhumitha",
+      "leads_30d": "159"
+    },
+    {
+      "id": 167,
+      "salesperson": "Dharshana",
+      "leads_30d": "150"
+    },
+    {
+      "id": 315,
+      "salesperson": "Madeshwaran",
+      "leads_30d": "140"
+    },
+    {
+      "id": 191,
+      "salesperson": "Neena Murugan ",
+      "leads_30d": "131"
+    },
+    {
+      "id": 310,
+      "salesperson": "Arun",
+      "leads_30d": "130"
+    },
+    {
+      "id": 308,
+      "salesperson": "Bharathi",
+      "leads_30d": "122"
+    }
+  ],
+  "dateRange": {
+    "oldest": "2025-07-29T18:30:00.000Z",
+    "newest": "2026-05-11T18:30:00.000Z",
+    "leads_7d": "1483",
+    "leads_30d": "9289",
+    "visited_30d": "60"
+  },
+  "sampleLead": [
+    {
+      "id": 310766,
+      "name": "Kasthuri",
+      "create_date": "2026-05-05T03:16:17.589Z",
+      "user_id": 265,
+      "team_id": 14,
+      "stage_id": 1,
+      "source_id": null,
+      "call_status": "new",
+      "walkin_call_status": "visited",
+      "walkin_visit_status": null,
+      "walkin_appt_confirm_status": "open",
+      "walkin_appointment_date": null,
+      "visited_date": "2026-05-01T23:30:00.000Z",
+      "sugar_level": "150-250_sugar_level",
+      "haf_status": "open",
+      "bdm_audit_score": null,
+      "l1_access_date": null,
+      "l2_access_date": null,
+      "batch_code_full": "DWM02",
+      "access_batch_code": null,
+      "is_l2_fully_paid": null,
+      "expected_revenue": null,
+      "probability": 8.33
+    },
+    {
+      "id": 310765,
+      "name": "Jayachandran",
+      "create_date": "2026-05-05T03:16:17.589Z",
+      "user_id": 265,
+      "team_id": 14,
+      "stage_id": 1,
+      "source_id": null,
+      "call_status": "new",
+      "walkin_call_status": "visited",
+      "walkin_visit_status": null,
+      "walkin_appt_confirm_status": "open",
+      "walkin_appointment_date": null,
+      "visited_date": "2026-05-01T23:00:00.000Z",
+      "sugar_level": "150-250_sugar_level",
+      "haf_status": "open",
+      "bdm_audit_score": null,
+      "l1_access_date": null,
+      "l2_access_date": null,
+      "batch_code_full": "DWM05",
+      "access_batch_code": null,
+      "is_l2_fully_paid": null,
+      "expected_revenue": null,
+      "probability": 8.33
+    },
+    {
+      "id": 310737,
+      "name": "C K DEEPA",
+      "create_date": "2026-05-05T01:41:20.254Z",
+      "user_id": 255,
+      "team_id": 14,
+      "stage_id": 1,
+      "source_id": null,
+      "call_status": "new",
+      "walkin_call_status": "visited",
+      "walkin_visit_status": null,
+      "walkin_appt_confirm_status": "open",
+      "walkin_appointment_date": null,
+      "visited_date": "2026-05-05T06:00:00.000Z",
+      "sugar_level": "150-250_sugar_level",
+      "haf_status": "open",
+      "bdm_audit_score": null,
+      "l1_access_date": null,
+      "l2_access_date": null,
+      "batch_code_full": "DWM05",
+      "access_batch_code": null,
+      "is_l2_fully_paid": null,
+      "expected_revenue": null,
+      "probability": 8.33
+    }
+  ],
+  "cols_crm_lead_call_log": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lead_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "logged_by_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "phone",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "call_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "logged_at",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    }
+  ],
+  "cols_crm_lead_followup_log": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lead_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "logged_by_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "log_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "old_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "new_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "old_status_label",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "new_status_label",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "next_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "logged_at",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "remarks",
+      "data_type": "text"
+    }
+  ],
+  "cols_crm_lead_payment_line": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lead_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "payment_mode",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "reference",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "notes",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "enrollment_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "payment_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "amount_paid",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "installment_sequence",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "line_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "planned_date",
+      "data_type": "date"
+    }
+  ],
+  "cols_crm_lead_health_assessment": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lead_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "ha_other_symptoms",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_sleep_pattern",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_complications_other",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_pain_score",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_food_habits",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_outside_food",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_other_habits",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_medical_history_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_family_history_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_stress_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_body_remarks",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_vision_issues",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_foot_issues",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_frequent_urination",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_tiredness",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_wound_healing",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_medical_history",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_family_history",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_cholesterol",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_thyroid",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_bp",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_cardiac",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_stroke",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_allopathy",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_ayurvedic",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_homeo",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_herbal",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_sidha",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_stress",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "ha_fasting",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_postprandial",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_hba1c",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_present_average_pp",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_height_cm",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_weight",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_body_fat",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "attended_by_haf_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "haf_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "chief_complaint",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "duration_of_diabetes",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "family_history_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "blood_pressure",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "pulse_rate",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "body_temperature",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "diet_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "physical_activity",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "sleep_hours",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "smoking_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "alcohol_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "water_intake",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "consultation_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "next_review_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "observations_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "bmi",
+      "data_type": "numeric"
+    }
+  ],
+  "cols_crm_lead_recording": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lead_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "rec_index",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "recorded_by_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "recording_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "duration_str",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "drive_link",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "recorded_at",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    }
+  ],
+  "cols_walkin_visit_summary": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "caller_user_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "visit_count",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    }
+  ],
+  "cols_crm_lead_lost": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lost_reason_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lost_feedback",
+      "data_type": "text"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    }
+  ],
+  "paymentLineEnrollTypes": [
+    {
+      "enrollment_type": "l1",
+      "n": "3848"
+    },
+    {
+      "enrollment_type": "l2",
+      "n": "79"
+    }
+  ],
+  "adsSpendTables": [
+    "utm_campaign",
+    "utm_medium",
+    "utm_source",
+    "utm_stage",
+    "utm_tag",
+    "utm_tag_rel"
+  ]
+}

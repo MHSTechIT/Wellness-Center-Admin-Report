@@ -1,0 +1,1956 @@
+{
+  "generatedAt": "2026-05-12T04:06:43.674Z",
+  "installedCustomModules": [
+    {
+      "name": "analytic",
+      "state": "installed",
+      "latest_version": "17.0.1.2"
+    },
+    {
+      "name": "auth_totp",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "auth_totp_mail",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "auth_totp_portal",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "base_import",
+      "state": "installed",
+      "latest_version": "17.0.2.0"
+    },
+    {
+      "name": "base_import_module",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "base_install_request",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "base_setup",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "base_sparse_field",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "calendar_sms",
+      "state": "installed",
+      "latest_version": "17.0.1.1"
+    },
+    {
+      "name": "crm",
+      "state": "installed",
+      "latest_version": "17.0.1.8"
+    },
+    {
+      "name": "crm_batch_codes",
+      "state": "installed",
+      "latest_version": "17.0.1.0.0"
+    },
+    {
+      "name": "crm_custom_fields",
+      "state": "installed",
+      "latest_version": "17.0.1.0.0"
+    },
+    {
+      "name": "crm_extension",
+      "state": "installed",
+      "latest_version": "17.0.1.0.0"
+    },
+    {
+      "name": "crm_iap_enrich",
+      "state": "installed",
+      "latest_version": "17.0.1.1"
+    },
+    {
+      "name": "crm_iap_mine",
+      "state": "installed",
+      "latest_version": "17.0.1.2"
+    },
+    {
+      "name": "crm_payment_history",
+      "state": "installed",
+      "latest_version": "17.0.1.0.0"
+    },
+    {
+      "name": "crm_sms",
+      "state": "installed",
+      "latest_version": "17.0.1.1"
+    },
+    {
+      "name": "crm_walkin_summary",
+      "state": "installed",
+      "latest_version": "17.0.1.0.0"
+    },
+    {
+      "name": "gamification",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "google_gmail",
+      "state": "installed",
+      "latest_version": "17.0.1.2"
+    },
+    {
+      "name": "hr",
+      "state": "installed",
+      "latest_version": "17.0.1.1"
+    },
+    {
+      "name": "hr_gamification",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "hr_org_chart",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "hr_skills",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "iap_crm",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "iap_mail",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "mail_bot",
+      "state": "installed",
+      "latest_version": "17.0.1.2"
+    },
+    {
+      "name": "mail_bot_hr",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "online_team_dashboard",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "portal_rating",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "project",
+      "state": "installed",
+      "latest_version": "17.0.1.3"
+    },
+    {
+      "name": "project_sms",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "project_task_extension",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "project_todo",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "queue_job",
+      "state": "installed",
+      "latest_version": "17.0.1.4.0"
+    },
+    {
+      "name": "queue_job_cron",
+      "state": "installed",
+      "latest_version": "17.0.1.1.0"
+    },
+    {
+      "name": "reminder_notification",
+      "state": "installed",
+      "latest_version": "17.0.1.0.0"
+    },
+    {
+      "name": "sales_team",
+      "state": "installed",
+      "latest_version": "17.0.1.1"
+    },
+    {
+      "name": "smartflow_integration",
+      "state": "installed",
+      "latest_version": "17.0.1.0.2"
+    },
+    {
+      "name": "smartflow_user_extension",
+      "state": "installed",
+      "latest_version": "17.0.1.0.0"
+    },
+    {
+      "name": "social_media",
+      "state": "installed",
+      "latest_version": "17.0.0.1"
+    },
+    {
+      "name": "spiffy_theme_backend",
+      "state": "installed",
+      "latest_version": "17.0.1.8"
+    },
+    {
+      "name": "uom",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "user_extension",
+      "state": "installed",
+      "latest_version": "17.0.2.0.0"
+    },
+    {
+      "name": "web_editor",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "web_hierarchy",
+      "state": "installed",
+      "latest_version": "17.0.1.0"
+    },
+    {
+      "name": "web_tour",
+      "state": "installed",
+      "latest_version": "17.0.0.1"
+    },
+    {
+      "name": "web_unsplash",
+      "state": "installed",
+      "latest_version": "17.0.1.1"
+    }
+  ],
+  "top80TablesByRows": [
+    {
+      "table": "mail_tracking_value",
+      "approx_rows": "1510827",
+      "size": "248 MB"
+    },
+    {
+      "table": "mail_message",
+      "approx_rows": "977674",
+      "size": "1076 MB"
+    },
+    {
+      "table": "smartflo_call_log",
+      "approx_rows": "893272",
+      "size": "595 MB"
+    },
+    {
+      "table": "mail_followers_mail_message_subtype_rel",
+      "approx_rows": "878858",
+      "size": "73 MB"
+    },
+    {
+      "table": "mail_followers",
+      "approx_rows": "756829",
+      "size": "136 MB"
+    },
+    {
+      "table": "mail_activity",
+      "approx_rows": "481587",
+      "size": "135 MB"
+    },
+    {
+      "table": "queue_job",
+      "approx_rows": "305008",
+      "size": "893 MB"
+    },
+    {
+      "table": "queue_job_lock",
+      "approx_rows": "304794",
+      "size": "39 MB"
+    },
+    {
+      "table": "mail_notification",
+      "approx_rows": "298389",
+      "size": "138 MB"
+    },
+    {
+      "table": "calendar_event",
+      "approx_rows": "251730",
+      "size": "60 MB"
+    },
+    {
+      "table": "crm_lead",
+      "approx_rows": "249368",
+      "size": "5385 MB"
+    },
+    {
+      "table": "calendar_attendee",
+      "approx_rows": "247556",
+      "size": "39 MB"
+    },
+    {
+      "table": "calendar_event_res_partner_rel",
+      "approx_rows": "242797",
+      "size": "21 MB"
+    },
+    {
+      "table": "mail_message_res_partner_rel",
+      "approx_rows": "205606",
+      "size": "31 MB"
+    },
+    {
+      "table": "ir_logging",
+      "approx_rows": "115195",
+      "size": "28 MB"
+    },
+    {
+      "table": "mail_mail_res_partner_rel",
+      "approx_rows": "104162",
+      "size": "9328 kB"
+    },
+    {
+      "table": "mail_mail",
+      "approx_rows": "43535",
+      "size": "126 MB"
+    },
+    {
+      "table": "crm_tag_rel",
+      "approx_rows": "33849",
+      "size": "3496 kB"
+    },
+    {
+      "table": "ir_model_data",
+      "approx_rows": "29136",
+      "size": "8696 kB"
+    },
+    {
+      "table": "bus_bus",
+      "approx_rows": "8308",
+      "size": "3968 kB"
+    },
+    {
+      "table": "call_log_summary",
+      "approx_rows": "7411",
+      "size": "2400 kB"
+    },
+    {
+      "table": "ir_model_fields",
+      "approx_rows": "6011",
+      "size": "2840 kB"
+    },
+    {
+      "table": "crm_lead_payment_line",
+      "approx_rows": "3835",
+      "size": "1360 kB"
+    },
+    {
+      "table": "ir_attachment",
+      "approx_rows": "2229",
+      "size": "2296 kB"
+    },
+    {
+      "table": "res_country_state",
+      "approx_rows": "1749",
+      "size": "304 kB"
+    },
+    {
+      "table": "ir_model_fields_selection",
+      "approx_rows": "1357",
+      "size": "328 kB"
+    },
+    {
+      "table": "res_groups_users_rel",
+      "approx_rows": "1353",
+      "size": "256 kB"
+    },
+    {
+      "table": "ir_model_constraint",
+      "approx_rows": "1252",
+      "size": "688 kB"
+    },
+    {
+      "table": "ir_module_module_dependency",
+      "approx_rows": "1202",
+      "size": "480 kB"
+    },
+    {
+      "table": "lead_import_batch",
+      "approx_rows": "1094",
+      "size": "192 kB"
+    },
+    {
+      "table": "message_attachment_rel",
+      "approx_rows": "1006",
+      "size": "144 kB"
+    },
+    {
+      "table": "ir_ui_view",
+      "approx_rows": "961",
+      "size": "3528 kB"
+    },
+    {
+      "table": "crm_location",
+      "approx_rows": "887",
+      "size": "168 kB"
+    },
+    {
+      "table": "digest_tip_res_users_rel",
+      "approx_rows": "694",
+      "size": "128 kB"
+    },
+    {
+      "table": "ir_module_module",
+      "approx_rows": "627",
+      "size": "1240 kB"
+    },
+    {
+      "table": "ir_model_access",
+      "approx_rows": "572",
+      "size": "248 kB"
+    },
+    {
+      "table": "discuss_channel_member",
+      "approx_rows": "501",
+      "size": "272 kB"
+    },
+    {
+      "table": "crm_lead_payment_attachment_rel",
+      "approx_rows": "409",
+      "size": "104 kB"
+    },
+    {
+      "table": "ir_model",
+      "approx_rows": "344",
+      "size": "264 kB"
+    },
+    {
+      "table": "ir_act_window",
+      "approx_rows": "296",
+      "size": "184 kB"
+    },
+    {
+      "table": "ir_ui_menu",
+      "approx_rows": "273",
+      "size": "136 kB"
+    },
+    {
+      "table": "project_task_user_rel",
+      "approx_rows": "260",
+      "size": "120 kB"
+    },
+    {
+      "table": "crm_lead_health_assessment",
+      "approx_rows": "258",
+      "size": "264 kB"
+    },
+    {
+      "table": "res_country",
+      "approx_rows": "250",
+      "size": "144 kB"
+    },
+    {
+      "table": "discuss_channel",
+      "approx_rows": "217",
+      "size": "112 kB"
+    },
+    {
+      "table": "project_task_type",
+      "approx_rows": "200",
+      "size": "88 kB"
+    },
+    {
+      "table": "res_partner",
+      "approx_rows": "173",
+      "size": "288 kB"
+    },
+    {
+      "table": "res_currency",
+      "approx_rows": "170",
+      "size": "88 kB"
+    },
+    {
+      "table": "ir_ui_menu_group_rel",
+      "approx_rows": "159",
+      "size": "72 kB"
+    },
+    {
+      "table": "crm_team_member",
+      "approx_rows": "138",
+      "size": "104 kB"
+    },
+    {
+      "table": "ir_rule",
+      "approx_rows": "136",
+      "size": "144 kB"
+    },
+    {
+      "table": "gamification_goal",
+      "approx_rows": "134",
+      "size": "96 kB"
+    },
+    {
+      "table": "ir_act_window_view",
+      "approx_rows": "128",
+      "size": "88 kB"
+    },
+    {
+      "table": "rule_group_rel",
+      "approx_rows": "122",
+      "size": "40 kB"
+    },
+    {
+      "table": "res_country_res_country_group_rel",
+      "approx_rows": "104",
+      "size": "40 kB"
+    },
+    {
+      "table": "ir_model_inherit",
+      "approx_rows": "102",
+      "size": "40 kB"
+    },
+    {
+      "table": "res_users",
+      "approx_rows": "101",
+      "size": "176 kB"
+    },
+    {
+      "table": "res_company_users_rel",
+      "approx_rows": "100",
+      "size": "72 kB"
+    },
+    {
+      "table": "walkin_visit_summary",
+      "approx_rows": "99",
+      "size": "104 kB"
+    },
+    {
+      "table": "project_task",
+      "approx_rows": "98",
+      "size": "456 kB"
+    },
+    {
+      "table": "digest_digest_res_users_rel",
+      "approx_rows": "93",
+      "size": "72 kB"
+    },
+    {
+      "table": "res_lang",
+      "approx_rows": "91",
+      "size": "112 kB"
+    },
+    {
+      "table": "ir_exports_line",
+      "approx_rows": "87",
+      "size": "80 kB"
+    },
+    {
+      "table": "gamification_challenge_users_rel",
+      "approx_rows": "85",
+      "size": "40 kB"
+    },
+    {
+      "table": "ir_module_category",
+      "approx_rows": "83",
+      "size": "48 kB"
+    },
+    {
+      "table": "res_users_log",
+      "approx_rows": "83",
+      "size": "72 kB"
+    },
+    {
+      "table": "res_users_settings",
+      "approx_rows": "81",
+      "size": "48 kB"
+    },
+    {
+      "table": "ir_model_relation",
+      "approx_rows": "76",
+      "size": "112 kB"
+    },
+    {
+      "table": "favorite_apps",
+      "approx_rows": "64",
+      "size": "32 kB"
+    },
+    {
+      "table": "ir_filters",
+      "approx_rows": "61",
+      "size": "96 kB"
+    },
+    {
+      "table": "team_favorite_user_rel",
+      "approx_rows": "60",
+      "size": "40 kB"
+    },
+    {
+      "table": "ir_act_server",
+      "approx_rows": "52",
+      "size": "88 kB"
+    },
+    {
+      "table": "res_groups",
+      "approx_rows": "48",
+      "size": "64 kB"
+    },
+    {
+      "table": "mail_message_subtype",
+      "approx_rows": "36",
+      "size": "32 kB"
+    },
+    {
+      "table": "bus_presence",
+      "approx_rows": "26",
+      "size": "88 kB"
+    },
+    {
+      "table": "ir_cron",
+      "approx_rows": "25",
+      "size": "72 kB"
+    },
+    {
+      "table": "crm_iap_lead_industry",
+      "approx_rows": "23",
+      "size": "48 kB"
+    },
+    {
+      "table": "mail_message_res_partner_starred_rel",
+      "approx_rows": "23",
+      "size": "40 kB"
+    },
+    {
+      "table": "res_groups_implied_rel",
+      "approx_rows": "23",
+      "size": "40 kB"
+    },
+    {
+      "table": "crm_iap_lead_role",
+      "approx_rows": "22",
+      "size": "48 kB"
+    }
+  ],
+  "likelyRelevantTables": [
+    "batch_report",
+    "crm_assign_leads_wizard",
+    "crm_assign_leads_wizard_crm_lead_rel",
+    "crm_assign_leads_wizard_res_users_rel",
+    "crm_convert_lead_mass_lead_rel",
+    "crm_haf_symptom_rel",
+    "crm_hc_availability_wizard",
+    "crm_iap_lead_helpers",
+    "crm_iap_lead_industry",
+    "crm_iap_lead_industry_crm_iap_lead_mining_request_rel",
+    "crm_iap_lead_mining_request",
+    "crm_iap_lead_mining_request_crm_iap_lead_role_rel",
+    "crm_iap_lead_mining_request_crm_tag_rel",
+    "crm_iap_lead_mining_request_res_country_rel",
+    "crm_iap_lead_mining_request_res_country_state_rel",
+    "crm_iap_lead_role",
+    "crm_iap_lead_seniority",
+    "crm_lead",
+    "crm_lead2opportunity_partner",
+    "crm_lead2opportunity_partner_mass",
+    "crm_lead2opportunity_partner_mass_res_users_rel",
+    "crm_lead_bulk_update_wizard",
+    "crm_lead_call_log",
+    "crm_lead_complication_rel",
+    "crm_lead_complication_tag",
+    "crm_lead_crm_lead2opportunity_partner_mass_rel",
+    "crm_lead_crm_lead2opportunity_partner_rel",
+    "crm_lead_crm_lead_lost_rel",
+    "crm_lead_followup_log",
+    "crm_lead_haf_symptom_rel",
+    "crm_lead_health_assessment",
+    "crm_lead_health_issue_rel",
+    "crm_lead_health_issue_tag",
+    "crm_lead_lost",
+    "crm_lead_managing_rel",
+    "crm_lead_managing_tag",
+    "crm_lead_payment_attachment_rel",
+    "crm_lead_payment_line",
+    "crm_lead_payment_wizard",
+    "crm_lead_pls_update",
+    "crm_lead_pls_update_crm_lead_scoring_frequency_field_rel",
+    "crm_lead_recording",
+    "crm_lead_scoring_frequency",
+    "crm_lead_scoring_frequency_field",
+    "crm_lead_symptom_tag",
+    "crm_lead_treatment_tag",
+    "lead_import_batch",
+    "lead_import_wizard",
+    "lead_import_wizard_res_users_rel",
+    "walkin_visit_summary"
+  ],
+  "crm_lead_columns": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "campaign_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "source_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "medium_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "message_bounce",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "user_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "team_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "company_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "stage_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "color",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "recurring_plan",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "partner_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "title",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lang_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "state_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "country_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "lost_reason_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "create_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "write_uid",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "phone_sanitized",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "email_normalized",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "email_cc",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "name",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "referred",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "priority",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "contact_name",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "partner_name",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "function",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "email_from",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "email_domain_criterion",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "phone",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "mobile",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "phone_state",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "email_state",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "website",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "street",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "street2",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "zip",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "city",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "date_deadline",
+      "data_type": "date"
+    },
+    {
+      "column_name": "lead_properties",
+      "data_type": "jsonb"
+    },
+    {
+      "column_name": "description",
+      "data_type": "text"
+    },
+    {
+      "column_name": "expected_revenue",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "prorated_revenue",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "recurring_revenue",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "recurring_revenue_monthly",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "recurring_revenue_monthly_prorated",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "recurring_revenue_prorated",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "active",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "date_closed",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "date_automation_last",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "date_open",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "date_last_stage_update",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "date_conversion",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "create_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "write_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "day_open",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "day_close",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "probability",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "automated_probability",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "reveal_id",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "iap_enrich_done",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "lead_mining_request_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "crm_location_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "whatsapp_no",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "import_source",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "age",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "sugar_level",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "treatment_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "webinar_attended",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "call_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "language",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "occupation",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "occupation_remarks",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "gender",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "payment_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "payment_reference",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "payment_mode",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "access_batch_code",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "batch_code_full",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "payment_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "next_payment_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "remarks",
+      "data_type": "text"
+    },
+    {
+      "column_name": "available_for_webinar",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "follow_up_on",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "walk_in_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "payment_amount",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "dnp_count",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "lost_reasons",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "lead_bucket",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "attended_by_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "walkin_call_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "walkin_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "payment_plan",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "no_of_installments",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "payment_status_summary",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "l1_access_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "l2_access_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "is_l2_fully_paid",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "is_fully_paid",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "entry_time",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "walkin_appointment_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "visited_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "last_payment_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "program_fee",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "balance_amount",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "last_payment_amount",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "total_paid",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "visited_credit_user_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "visited_credit_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "visited_credit_given",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "online_access_batch_code",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "offline_access_batch_code",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "access_batch_code_history",
+      "data_type": "text"
+    },
+    {
+      "column_name": "assign_to_team",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "hc_assigned_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "attended_by_health_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "walkin_treatment_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "attended_by_kit_id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "walkin_appt_confirm_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "self_audit_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "bdm_audit_score",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "bdm_audit_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "haf_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "chief_complaint",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "duration_of_diabetes",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "family_history_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "blood_pressure",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "pulse_rate",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "body_temperature",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "walkin_lead_source",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_other_symptoms",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_pain_score",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "diet_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "physical_activity",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "sleep_hours",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "smoking_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "alcohol_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "water_intake",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_sleep_pattern",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "ha_complications_other",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "recording_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "zoom_recording_link",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "consultation_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "program_suggested",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "l1_price_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "client_category",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "walkin_payment_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "pstatus_full",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "pstatus_inst2",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "pstatus_inst3",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "pstatus_emi",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "pstatus_advance",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "emi_provider",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "emi_eligibility",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "emi_tenure",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "emi_disbursement_eta",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "emi_payment_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "advance_mode",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "walkin_years_of_treatment",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "walkin_visit_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "welcome_kit_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "paid_feedback_outcome",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "followup_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "collection_status",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "collection_payment_type",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "haf_consult_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "haf_review_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "date_of_joining",
+      "data_type": "date"
+    },
+    {
+      "column_name": "date_of_access_planned",
+      "data_type": "date"
+    },
+    {
+      "column_name": "walkin_planned_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "emi_start_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "advance_paid_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "balance_due_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "walkin_last_test_report_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "collection_promised_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "collection_next_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "self_audit_good",
+      "data_type": "text"
+    },
+    {
+      "column_name": "self_audit_not_good",
+      "data_type": "text"
+    },
+    {
+      "column_name": "self_audit_improve",
+      "data_type": "text"
+    },
+    {
+      "column_name": "bdm_audit_good",
+      "data_type": "text"
+    },
+    {
+      "column_name": "bdm_audit_not_good",
+      "data_type": "text"
+    },
+    {
+      "column_name": "bdm_audit_improve",
+      "data_type": "text"
+    },
+    {
+      "column_name": "haf_family_history_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_body_remarks",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_food_habits",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_outside_food",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_other_habits",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_medical_history_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ha_stress_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "haf_observations",
+      "data_type": "text"
+    },
+    {
+      "column_name": "client_expectations",
+      "data_type": "text"
+    },
+    {
+      "column_name": "welcome_kit_remarks",
+      "data_type": "text"
+    },
+    {
+      "column_name": "paid_feedback_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "paid_feedback_internal_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "followup_remarks",
+      "data_type": "text"
+    },
+    {
+      "column_name": "collection_notes",
+      "data_type": "text"
+    },
+    {
+      "column_name": "haf_bmi",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "ha_hba1c",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "l1_special_offer_amount",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "l2_price",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "emi_monthly_amount",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "emi_down_payment",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "emi_remaining_amount",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "advance_amount",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "balance_due",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "collection_promised_amount",
+      "data_type": "numeric"
+    },
+    {
+      "column_name": "haf_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "recording_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "payment_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "consultation_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "health_details_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "welcome_kit_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "paid_feedback_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "followup_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "collection_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "followup_log_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_medical_history",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_cholesterol",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_thyroid",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_bp",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_cardiac",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_complications_stroke",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_allopathy",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_ayurvedic",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_homeo",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_herbal",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_treatment_sidha",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "ha_stress",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "walkin_appt_request_raised",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "walkin_reschedule_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "walkin_reschedule_request_raised",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "paid_feedback_next_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "followup_next_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "ha_height_cm",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_weight",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_body_fat",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_fasting",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_postprandial",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "ha_present_average_pp",
+      "data_type": "double precision"
+    },
+    {
+      "column_name": "is_hc_assigned",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "alt_phone",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "walkin_visited_radio",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "blood_group",
+      "data_type": "character varying"
+    }
+  ],
+  "mhsKeywordColumns": [
+    {
+      "table_name": "crm_lead",
+      "column_name": "access_batch_code",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "access_batch_code_history",
+      "data_type": "text"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "batch_code_full",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "bdm_audit_good",
+      "data_type": "text"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "bdm_audit_improve",
+      "data_type": "text"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "bdm_audit_not_good",
+      "data_type": "text"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "bdm_audit_score",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "bdm_audit_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "call_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "haf_bmi",
+      "data_type": "numeric"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "haf_consult_date",
+      "data_type": "date"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "haf_expanded",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "haf_family_history_notes",
+      "data_type": "text"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "haf_observations",
+      "data_type": "text"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "haf_review_date",
+      "data_type": "date"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "haf_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "is_l2_fully_paid",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "l1_access_date",
+      "data_type": "date"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "l1_price_type",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "l1_special_offer_amount",
+      "data_type": "numeric"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "l2_access_date",
+      "data_type": "date"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "l2_price",
+      "data_type": "numeric"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "offline_access_batch_code",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "online_access_batch_code",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "sugar_level",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "visited_credit_date",
+      "data_type": "date"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "visited_credit_given",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "visited_credit_user_id",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "visited_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "walkin_appointment_date",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "walkin_appt_confirm_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "walkin_appt_request_raised",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "walkin_call_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "walkin_visit_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead",
+      "column_name": "walkin_visited_radio",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead_bulk_update_wizard",
+      "column_name": "call_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead_call_log",
+      "column_name": "call_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead_health_assessment",
+      "column_name": "attended_by_haf_id",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "crm_lead_health_assessment",
+      "column_name": "haf_status",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead_payment_line",
+      "column_name": "enrollment_type",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "crm_lead_payment_wizard",
+      "column_name": "enrollment_type",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "gamification_goal_definition",
+      "column_name": "batch_distinctive_field",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "gamification_goal_definition",
+      "column_name": "batch_mode",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "gamification_goal_definition",
+      "column_name": "batch_user_expression",
+      "data_type": "character varying"
+    },
+    {
+      "table_name": "hr_employee",
+      "column_name": "coach_id",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "hr_employee_public",
+      "column_name": "coach_id",
+      "data_type": "integer"
+    },
+    {
+      "table_name": "res_users",
+      "column_name": "is_health_coach_user",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "walkin_visit_summary",
+      "column_name": "visit_count",
+      "data_type": "integer"
+    }
+  ],
+  "rowCounts": {
+    "crm_lead": 252319,
+    "crm_stage": 4,
+    "crm_team": 11,
+    "sale_order": null,
+    "res_partner": 175,
+    "res_users": 101,
+    "hr_employee": 1,
+    "batch_report": 0,
+    "crm_assign_leads_wizard": 0,
+    "crm_assign_leads_wizard_crm_lead_rel": 0,
+    "crm_assign_leads_wizard_res_users_rel": 0,
+    "crm_convert_lead_mass_lead_rel": 0,
+    "crm_haf_symptom_rel": 0,
+    "crm_hc_availability_wizard": 0,
+    "crm_iap_lead_helpers": 0,
+    "crm_iap_lead_industry": 23,
+    "crm_iap_lead_industry_crm_iap_lead_mining_request_rel": 0,
+    "crm_iap_lead_mining_request": 0,
+    "crm_iap_lead_mining_request_crm_iap_lead_role_rel": 0,
+    "crm_iap_lead_mining_request_crm_tag_rel": 0,
+    "crm_iap_lead_mining_request_res_country_rel": 0,
+    "crm_iap_lead_mining_request_res_country_state_rel": 0
+  }
+}

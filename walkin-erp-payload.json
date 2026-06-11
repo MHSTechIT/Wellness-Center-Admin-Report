@@ -1,0 +1,736 @@
+{
+  "from_date": "2026-05-12",
+  "to_date": "2026-05-12",
+  "total_walkin_leads": 21,
+  "appointments_fixed": 0,
+  "visits_completed": 3,
+  "assessments_completed": 0,
+  "l1_enrolled": 0,
+  "l2_enrolled": 0,
+  "total_revenue": 0,
+  "appointment_conversion_pct": 0,
+  "visit_conversion_pct": 0,
+  "assessment_completion_pct": 0,
+  "enrollment_conversion_pct": 0,
+  "caller_table": [
+    {
+      "id": 254,
+      "name": "Prem Kumar",
+      "total_calls": 0,
+      "total_unique_calls": 0,
+      "connected_calls": 0,
+      "not_connected_calls": 0,
+      "total_duration_min": 0,
+      "avg_duration_min": 0,
+      "appointments_fixed": 0,
+      "visits_completed": 0,
+      "pending_followups": 0,
+      "new_leads": 6
+    },
+    {
+      "id": 255,
+      "name": "Gayathri",
+      "total_calls": 37,
+      "total_unique_calls": 31,
+      "connected_calls": 5,
+      "not_connected_calls": 32,
+      "total_duration_min": 5.38,
+      "avg_duration_min": 1.08,
+      "appointments_fixed": 0,
+      "visits_completed": 0,
+      "pending_followups": 2,
+      "new_leads": 5
+    },
+    {
+      "id": 256,
+      "name": "K . Lavanya",
+      "total_calls": 82,
+      "total_unique_calls": 34,
+      "connected_calls": 34,
+      "not_connected_calls": 48,
+      "total_duration_min": 28.13,
+      "avg_duration_min": 0.83,
+      "appointments_fixed": 0,
+      "visits_completed": 1,
+      "pending_followups": 2,
+      "new_leads": 2
+    },
+    {
+      "id": 265,
+      "name": "Pavithra",
+      "total_calls": 4,
+      "total_unique_calls": 4,
+      "connected_calls": 2,
+      "not_connected_calls": 2,
+      "total_duration_min": 0.87,
+      "avg_duration_min": 0.43,
+      "appointments_fixed": 0,
+      "visits_completed": 2,
+      "pending_followups": 0,
+      "new_leads": 2
+    },
+    {
+      "id": 300,
+      "name": "Emilda",
+      "total_calls": 0,
+      "total_unique_calls": 0,
+      "connected_calls": 0,
+      "not_connected_calls": 0,
+      "total_duration_min": 0,
+      "avg_duration_min": 0,
+      "appointments_fixed": 0,
+      "visits_completed": 0,
+      "pending_followups": 0,
+      "new_leads": 0
+    },
+    {
+      "id": 193,
+      "name": "Pavithra Sakkarai",
+      "total_calls": 4,
+      "total_unique_calls": 4,
+      "connected_calls": 2,
+      "not_connected_calls": 2,
+      "total_duration_min": 2.43,
+      "avg_duration_min": 1.22,
+      "appointments_fixed": 0,
+      "visits_completed": 0,
+      "pending_followups": 0,
+      "new_leads": 0
+    },
+    {
+      "id": 248,
+      "name": "priyangag",
+      "total_calls": 20,
+      "total_unique_calls": 17,
+      "connected_calls": 9,
+      "not_connected_calls": 11,
+      "total_duration_min": 45.52,
+      "avg_duration_min": 5.06,
+      "appointments_fixed": 0,
+      "visits_completed": 0,
+      "pending_followups": 0,
+      "new_leads": 0
+    },
+    {
+      "id": 257,
+      "name": "Dharshini",
+      "total_calls": 0,
+      "total_unique_calls": 0,
+      "connected_calls": 0,
+      "not_connected_calls": 0,
+      "total_duration_min": 0,
+      "avg_duration_min": 0,
+      "appointments_fixed": 0,
+      "visits_completed": 0,
+      "pending_followups": 0,
+      "new_leads": 95
+    }
+  ],
+  "coach_table": [
+    {
+      "id": 311,
+      "name": "Ram kumar",
+      "health_assessments": 0,
+      "l1_enrolled": 0,
+      "l2_enrolled": 0,
+      "payments_recorded": 0,
+      "pending_followups": 0
+    }
+  ],
+  "call_counts_by_date": [
+    {
+      "date": "2026-05-12",
+      "count": 147
+    }
+  ],
+  "status_pie_data": [
+    {
+      "label": "Follow_Up",
+      "value": 3
+    },
+    {
+      "label": "New",
+      "value": 7
+    },
+    {
+      "label": "Rnr",
+      "value": 4
+    },
+    {
+      "label": "Line_Busy",
+      "value": 1
+    },
+    {
+      "label": "Call_Back",
+      "value": 1
+    },
+    {
+      "label": "Not_Interested",
+      "value": 2
+    },
+    {
+      "label": "Visited",
+      "value": 3
+    }
+  ],
+  "overall_total_calls": 147,
+  "overall_call_duration": 82.33,
+  "users": [
+    {
+      "id": 311,
+      "name": "Ram kumar"
+    },
+    {
+      "id": 254,
+      "name": "Prem Kumar"
+    },
+    {
+      "id": 255,
+      "name": "Gayathri"
+    },
+    {
+      "id": 256,
+      "name": "K . Lavanya"
+    },
+    {
+      "id": 265,
+      "name": "Pavithra"
+    },
+    {
+      "id": 300,
+      "name": "Emilda"
+    },
+    {
+      "id": 193,
+      "name": "Pavithra Sakkarai"
+    },
+    {
+      "id": 248,
+      "name": "priyangag"
+    },
+    {
+      "id": 257,
+      "name": "Dharshini"
+    }
+  ],
+  "batch_data": [
+    {
+      "batch": "No Batch",
+      "lead_count": 55
+    },
+    {
+      "batch": "2026-05-05 00:00:00",
+      "lead_count": 2
+    },
+    {
+      "batch": "ASDW17",
+      "lead_count": 2
+    },
+    {
+      "batch": "DW21",
+      "lead_count": 21
+    },
+    {
+      "batch": "DW24",
+      "lead_count": 36
+    },
+    {
+      "batch": "DWA01",
+      "lead_count": 26
+    },
+    {
+      "batch": "DWA02",
+      "lead_count": 15
+    },
+    {
+      "batch": "DWA03",
+      "lead_count": 24
+    },
+    {
+      "batch": "DWA04",
+      "lead_count": 36
+    },
+    {
+      "batch": "DWA06",
+      "lead_count": 56
+    },
+    {
+      "batch": "DWA07",
+      "lead_count": 43
+    },
+    {
+      "batch": "DWA08",
+      "lead_count": 44
+    },
+    {
+      "batch": "DWA10",
+      "lead_count": 80
+    },
+    {
+      "batch": "DWA11",
+      "lead_count": 48
+    },
+    {
+      "batch": "DWA12",
+      "lead_count": 2
+    },
+    {
+      "batch": "DWA13",
+      "lead_count": 72
+    },
+    {
+      "batch": "DWA15",
+      "lead_count": 114
+    },
+    {
+      "batch": "DWA16",
+      "lead_count": 45
+    },
+    {
+      "batch": "DWA17",
+      "lead_count": 48
+    },
+    {
+      "batch": "DWA18",
+      "lead_count": 49
+    },
+    {
+      "batch": "DWA20",
+      "lead_count": 121
+    },
+    {
+      "batch": "DWA22",
+      "lead_count": 35
+    },
+    {
+      "batch": "DWA23",
+      "lead_count": 29
+    },
+    {
+      "batch": "DWA24",
+      "lead_count": 26
+    },
+    {
+      "batch": "DWA25",
+      "lead_count": 35
+    },
+    {
+      "batch": "DWA26",
+      "lead_count": 31
+    },
+    {
+      "batch": "DWA27",
+      "lead_count": 36
+    },
+    {
+      "batch": "DWA28",
+      "lead_count": 34
+    },
+    {
+      "batch": "DWA29",
+      "lead_count": 50
+    },
+    {
+      "batch": "DWA30",
+      "lead_count": 24
+    },
+    {
+      "batch": "DWF01",
+      "lead_count": 22
+    },
+    {
+      "batch": "DWF02",
+      "lead_count": 1
+    },
+    {
+      "batch": "DWF03",
+      "lead_count": 12
+    },
+    {
+      "batch": "DWF04",
+      "lead_count": 40
+    },
+    {
+      "batch": "DWF05",
+      "lead_count": 1
+    },
+    {
+      "batch": "DWF06",
+      "lead_count": 44
+    },
+    {
+      "batch": "DWF07",
+      "lead_count": 22
+    },
+    {
+      "batch": "DWF08",
+      "lead_count": 8
+    },
+    {
+      "batch": "DWF09",
+      "lead_count": 17
+    },
+    {
+      "batch": "DWF10",
+      "lead_count": 25
+    },
+    {
+      "batch": "DWF11",
+      "lead_count": 24
+    },
+    {
+      "batch": "DWF12",
+      "lead_count": 5
+    },
+    {
+      "batch": "DWF14",
+      "lead_count": 163
+    },
+    {
+      "batch": "DWF15",
+      "lead_count": 2
+    },
+    {
+      "batch": "DWF16",
+      "lead_count": 59
+    },
+    {
+      "batch": "DWF17",
+      "lead_count": 25
+    },
+    {
+      "batch": "DWF18",
+      "lead_count": 10
+    },
+    {
+      "batch": "DWF19",
+      "lead_count": 18
+    },
+    {
+      "batch": "DWF20",
+      "lead_count": 35
+    },
+    {
+      "batch": "DWF21",
+      "lead_count": 72
+    },
+    {
+      "batch": "DWF21ML",
+      "lead_count": 128
+    },
+    {
+      "batch": "DWF22",
+      "lead_count": 31
+    },
+    {
+      "batch": "DWF24",
+      "lead_count": 34
+    },
+    {
+      "batch": "DWF25",
+      "lead_count": 28
+    },
+    {
+      "batch": "DWF27",
+      "lead_count": 22
+    },
+    {
+      "batch": "DWF28",
+      "lead_count": 15
+    },
+    {
+      "batch": "DWJ03",
+      "lead_count": 19
+    },
+    {
+      "batch": "DWJ05",
+      "lead_count": 45
+    },
+    {
+      "batch": "DWJ06",
+      "lead_count": 6
+    },
+    {
+      "batch": "DWJ07",
+      "lead_count": 10
+    },
+    {
+      "batch": "DWJ09",
+      "lead_count": 108
+    },
+    {
+      "batch": "DWJ10",
+      "lead_count": 39
+    },
+    {
+      "batch": "DWJ12",
+      "lead_count": 86
+    },
+    {
+      "batch": "DWJ14",
+      "lead_count": 130
+    },
+    {
+      "batch": "DWJ19",
+      "lead_count": 235
+    },
+    {
+      "batch": "DWJ20",
+      "lead_count": 31
+    },
+    {
+      "batch": "DWJ21",
+      "lead_count": 45
+    },
+    {
+      "batch": "DWJ22",
+      "lead_count": 41
+    },
+    {
+      "batch": "DWJ23",
+      "lead_count": 44
+    },
+    {
+      "batch": "DWJ24",
+      "lead_count": 20
+    },
+    {
+      "batch": "DWJ25",
+      "lead_count": 34
+    },
+    {
+      "batch": "DWJ27",
+      "lead_count": 75
+    },
+    {
+      "batch": "DWJ28",
+      "lead_count": 28
+    },
+    {
+      "batch": "DWJ29",
+      "lead_count": 25
+    },
+    {
+      "batch": "DWJ30",
+      "lead_count": 16
+    },
+    {
+      "batch": "DWJ31",
+      "lead_count": 16
+    },
+    {
+      "batch": "DWM02",
+      "lead_count": 76
+    },
+    {
+      "batch": "DWM03",
+      "lead_count": 32
+    },
+    {
+      "batch": "DWM04",
+      "lead_count": 56
+    },
+    {
+      "batch": "DWM05",
+      "lead_count": 73
+    },
+    {
+      "batch": "DWM06",
+      "lead_count": 87
+    },
+    {
+      "batch": "DWM07",
+      "lead_count": 13
+    },
+    {
+      "batch": "DWM08",
+      "lead_count": 18
+    },
+    {
+      "batch": "DWM09",
+      "lead_count": 95
+    },
+    {
+      "batch": "DWM10",
+      "lead_count": 57
+    },
+    {
+      "batch": "DWM11",
+      "lead_count": 61
+    },
+    {
+      "batch": "DWM12",
+      "lead_count": 12
+    },
+    {
+      "batch": "DWM13",
+      "lead_count": 36
+    },
+    {
+      "batch": "DWM14",
+      "lead_count": 60
+    },
+    {
+      "batch": "DWM15",
+      "lead_count": 51
+    },
+    {
+      "batch": "DWM16",
+      "lead_count": 109
+    },
+    {
+      "batch": "DWM17",
+      "lead_count": 34
+    },
+    {
+      "batch": "DWM18",
+      "lead_count": 37
+    },
+    {
+      "batch": "DWM19",
+      "lead_count": 53
+    },
+    {
+      "batch": "DWM20",
+      "lead_count": 41
+    },
+    {
+      "batch": "DWM21",
+      "lead_count": 27
+    },
+    {
+      "batch": "DWM22",
+      "lead_count": 28
+    },
+    {
+      "batch": "DWM23",
+      "lead_count": 31
+    },
+    {
+      "batch": "DWM24",
+      "lead_count": 27
+    },
+    {
+      "batch": "DWM25",
+      "lead_count": 21
+    },
+    {
+      "batch": "DWM26",
+      "lead_count": 20
+    },
+    {
+      "batch": "DWM28",
+      "lead_count": 19
+    },
+    {
+      "batch": "DWM30",
+      "lead_count": 37
+    },
+    {
+      "batch": "DWM31",
+      "lead_count": 18
+    },
+    {
+      "batch": "DWM9",
+      "lead_count": 18
+    },
+    {
+      "batch": "No Batch",
+      "lead_count": 193
+    }
+  ],
+  "status": [
+    {
+      "key": "new",
+      "label": "New"
+    },
+    {
+      "key": "dnd",
+      "label": "DND"
+    },
+    {
+      "key": "rnr",
+      "label": "RNR"
+    },
+    {
+      "key": "call_back",
+      "label": "Call Back"
+    },
+    {
+      "key": "already_paid",
+      "label": "Already Paid"
+    },
+    {
+      "key": "follow_up",
+      "label": "Follow Up"
+    },
+    {
+      "key": "line_busy",
+      "label": "Line Busy"
+    },
+    {
+      "key": "switched_off",
+      "label": "Switched Off"
+    },
+    {
+      "key": "not_registered",
+      "label": "Not Registered"
+    },
+    {
+      "key": "no_sugar",
+      "label": "No Sugar"
+    },
+    {
+      "key": "appointment_fixed_direct",
+      "label": "Appointment Fixed - Direct"
+    },
+    {
+      "key": "appointment_fixed_zoom",
+      "label": "Appointment Fixed - Zoom"
+    },
+    {
+      "key": "not_interested",
+      "label": "Not Interested"
+    },
+    {
+      "key": "future_follow_up",
+      "label": "Future Follow Up"
+    },
+    {
+      "key": "out_of_service",
+      "label": "Out of Service"
+    },
+    {
+      "key": "confirmed",
+      "label": "Confirmed"
+    },
+    {
+      "key": "rescheduled",
+      "label": "Rescheduled"
+    },
+    {
+      "key": "visited",
+      "label": "Visited"
+    },
+    {
+      "key": "not_visited",
+      "label": "Not Visited"
+    },
+    {
+      "key": "disqualified",
+      "label": "Disqualified"
+    },
+    {
+      "key": "invalid",
+      "label": "Invalid"
+    },
+    {
+      "key": "wrong_number",
+      "label": "Wrong Number"
+    },
+    {
+      "key": "payment_failed",
+      "label": "Payment Failed"
+    }
+  ]
+}
