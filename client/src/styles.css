@@ -143,12 +143,17 @@ thead { position: sticky; top: 0; z-index: 10; }
 .col-row th.sl2 { position: sticky; left: 150px; z-index: 5; background: var(--brand-bg); min-width: 60px; }
 .col-row th .arr { opacity: .35; margin-left: 3px; font-size: 8px; }
 
-tbody tr { transition: background .12s; }
-tbody tr:hover { background: var(--brand-bg); }
+tbody tr { transition: background-color .12s, box-shadow .12s; }
+/* Stronger row-hover so the cursor's row is unmistakable. Exclude the sticky TOTAL row. */
+tbody tr:not(.total):hover td { background: #E5DDFC; }
+tbody tr:not(.total):hover td.sl,
+tbody tr:not(.total):hover td.sl2 { background: #D8CAF7; color: var(--brand-2); box-shadow: inset 3px 0 0 var(--brand); }
+[data-theme="dark"] tbody tr:not(.total):hover td { background: #4C1D95; color: #F5F3FF; }
+[data-theme="dark"] tbody tr:not(.total):hover td.sl,
+[data-theme="dark"] tbody tr:not(.total):hover td.sl2 { background: #5B21B6; box-shadow: inset 3px 0 0 #A78BFA; }
 tbody td { padding: 5px 7px; text-align: center; white-space: nowrap; border-bottom: 1px solid var(--border-2); border-right: 1px solid var(--border-2); font-family: var(--mono); color: var(--text); }
 tbody td.sl  { position: sticky; left: 0; z-index: 2; background: var(--surface); border-right: 1px solid var(--border); text-align: left; padding-left: 12px; font-family: var(--sans); font-weight: 500; color: var(--text); min-width: 150px; }
 tbody td.sl2 { position: sticky; left: 150px; z-index: 2; background: var(--surface); border-right: 1px solid var(--border); font-weight: 600; color: var(--brand-2); min-width: 60px; }
-tbody tr:hover td.sl, tbody tr:hover td.sl2 { background: var(--brand-bg); }
 tbody tr.total { background: var(--brand-bg-2); font-weight: 600; position: sticky; bottom: 0; z-index: 3; }
 .total td.sl, .total td.sl2 { background: var(--brand-bg-2); color: var(--brand-2); }
 .total td { border-top: 1px solid var(--brand); }
