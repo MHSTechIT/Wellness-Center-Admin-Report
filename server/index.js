@@ -305,7 +305,7 @@ app.get('/api/report', requireAuth, async (req, res) => {
         row.notConnCalls = Math.max(tc - cc, 0);
         row.inCalls      = Number(c.ic || 0);
         row.outCalls     = Number(c.oc || 0);
-        row.totalDurMin  = dur ? Math.round((dur / 60) * 10) / 10 : 0;
+        row.totalDurMin  = dur ? Math.round((dur / 60) * 100) / 100 : 0;
         row.avgDurMin    = cc > 0 ? Math.round((dur / 60 / cc) * 100) / 100 : 0;
         return row;
       };
@@ -359,7 +359,7 @@ app.get('/api/report', requireAuth, async (req, res) => {
        * ALL filters + computes the rich per-user metrics). ERP proxy is the
        * fallback ONLY if the SQL path throws (e.g. a telephony table missing). */
       try {
-        const sql = buildPersonQuery({ ...filters, from: req.query.from, to: req.query.to });
+        const sql = buildPersonQuery(filters);
         const pRows = (await q(sql.text, sql.params)).rows;
         rows = pRows.map((r) => {
           const out = withDerived({ ...ZERO_ROW, ...r });

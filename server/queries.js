@@ -271,7 +271,7 @@ export function buildPeriodCallsQuery(period, filters) {
         TO_CHAR(date_trunc('${unit}', start_time + INTERVAL '5 hours 30 minutes'), 'YYYY-MM-DD') AS bucket,
         COUNT(*)::int                                       AS tc,
         COUNT(DISTINCT customer_number)::int                AS uc,
-        COUNT(*) FILTER (WHERE call_connected = TRUE)::int  AS cc,
+        COUNT(*) FILTER (WHERE status LIKE 'answered%')::int   AS cc,
         COUNT(*) FILTER (WHERE direction = 'inbound')::int  AS ic,
         COUNT(*) FILTER (WHERE direction = 'outbound')::int AS oc,
         COALESCE(SUM(duration), 0)::double precision        AS dur_sec
@@ -351,7 +351,7 @@ export function buildPersonQuery(filters) {
           agent_id AS user_id,
           COUNT(*)::int                                       AS tc,
           COUNT(DISTINCT customer_number)::int                AS uc,
-          COUNT(*) FILTER (WHERE call_connected = TRUE)::int  AS cc,
+          COUNT(*) FILTER (WHERE status LIKE 'answered%')::int AS cc,
           COUNT(*) FILTER (WHERE direction = 'inbound')::int  AS ic,
           COUNT(*) FILTER (WHERE direction = 'outbound')::int AS oc,
           COALESCE(SUM(duration), 0)::double precision        AS dur_sec
@@ -486,7 +486,7 @@ export function buildPersonQuery(filters) {
         COALESCE(c.tc - c.cc, 0)             AS "notConnCalls",
         COALESCE(c.ic, 0)                    AS "inCalls",
         COALESCE(c.oc, 0)                    AS "outCalls",
-        COALESCE(ROUND((c.dur_sec / 60.0)::numeric, 1), 0) AS "totalDurMin",
+        COALESCE(ROUND((c.dur_sec / 60.0)::numeric, 2), 0) AS "totalDurMin",
         CASE WHEN COALESCE(c.cc,0) > 0
              THEN ROUND((c.dur_sec / 60.0 / c.cc)::numeric, 2)
              ELSE 0 END                      AS "avgDurMin",
