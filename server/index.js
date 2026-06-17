@@ -253,7 +253,8 @@ app.get('/api/report', requireAuth, async (req, res) => {
 
     // Default-zero row so buckets/persons with no leads still render every column.
     const ZERO_ROW = {
-      fu:0, cb:0, lb:0, rnr:0, dnd:0, so:0, oos:0, wn:0, open:0, ni:0, nosugar:0, oth:0, callTot:0,
+      fu:0, cb:0, lb:0, rnr:0, dnd:0, so:0, oos:0, wn:0, open:0, ni:0, nosugar:0,
+      ap:0, ffu:0, nr:0, nv:0, dq:0, inv:0, oth:0, callTot:0,
       apptD:0, apptZ:0, apptTot:0, conf:0, vis:0,
       sugarHi:0, sugarMid:0, sugarNo:0,
       consWJ:0, consTW:0, consNW:0, consTM:0, consQD:0, recDone:0,
@@ -413,11 +414,13 @@ app.get('/api/report', requireAuth, async (req, res) => {
       const CS_COL = {
         follow_up: 'fu', call_back: 'cb', line_busy: 'lb', rnr: 'rnr', dnd: 'dnd',
         switched_off: 'so', out_of_service: 'oos', wrong_number: 'wn', new: 'open',
-        not_interested: 'ni',
+        not_interested: 'ni', already_paid: 'ap', future_follow_up: 'ffu',
+        not_registered: 'nr', not_visited: 'nv', disqualified: 'dq', invalid: 'inv',
       };
       const CS_KNOWN = new Set([
-        ...Object.keys(CS_COL), 'no_sugar', 'already_paid',
+        ...Object.keys(CS_COL), 'no_sugar',
         'appointment_fixed_direct', 'appointment_fixed_zoom', 'visited',
+        'confirmed', 'payment_failed', 'rescheduled',
       ]);
       const sql = buildClientQuery(filters);
       const cnt = buildClientCountQuery(filters);

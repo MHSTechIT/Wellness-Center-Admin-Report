@@ -23,7 +23,13 @@ export const COLS = [
   { k:'open',    l:'Open',          g:'CALL STATUS', gc:'g-call', tag:'ta' },
   { k:'ni',      l:'Not Int.',      g:'CALL STATUS', gc:'g-call', tag:'tr' },
   { k:'nosugar', l:'No Sugar',      g:'CALL STATUS', gc:'g-call', tag:'ta' },
-  { k:'oth',     l:'Invalid',       g:'CALL STATUS', gc:'g-call', tag:'ta' },
+  { k:'ap',      l:'Already Pd',   g:'CALL STATUS', gc:'g-call' },
+  { k:'ffu',     l:'Fut. F/U',     g:'CALL STATUS', gc:'g-call' },
+  { k:'nr',      l:'Not Reg.',     g:'CALL STATUS', gc:'g-call' },
+  { k:'nv',      l:'Not Vis.',     g:'CALL STATUS', gc:'g-call' },
+  { k:'dq',      l:'DQ',           g:'CALL STATUS', gc:'g-call', tag:'tr' },
+  { k:'inv',     l:'Invalid',      g:'CALL STATUS', gc:'g-call', tag:'tr' },
+  { k:'oth',     l:'Other',        g:'CALL STATUS', gc:'g-call', tag:'ta' },
   // "Dispositioned" = count of leads summed across call-status dispositions (NOT phone calls).
   // Renamed from "Total Calls" to avoid clashing with the TELEPHONY "Total Calls" (phone calls).
   { k:'callTot', l:'Dispositioned', g:'CALL STATUS', gc:'g-call' },
@@ -131,7 +137,7 @@ export const COLS = [
 
 export const PRESETS = {
   all: null,
-  sales:  ['period','leads','batch','src','loc','fu','cb','lb','rnr','dnd','so','oos','wn','open','ni','nosugar','oth','callTot','apptD','apptZ','apptTot','conf','vis','m_l2a','m_a2v','m_l2v','m_l2c'],
+  sales:  ['period','leads','batch','src','loc','fu','cb','lb','rnr','dnd','so','oos','wn','open','ni','nosugar','ap','ffu','nr','nv','dq','inv','oth','callTot','apptD','apptZ','apptTot','conf','vis','m_l2a','m_a2v','m_l2v','m_l2c'],
   health: ['period','leads','sugarHi','sugarMid','sugarNo','consWJ','consTW','consNW','consTM','consQD','recDone','progL1','progL2','progBoth','enr','fp','pp','inst','emi'],
   roas:   ['period','leads','enr','fp','pp','inst','rev','spent','roasAll','roasFPPP','roasEnr','instCnt','roasInst','l1tot','l2tot'],
   metric: ['period','leads','apptD','apptZ','conf','vis','enr','fp','pp','m_l2a','m_a2v','m_v2e','m_v2fp','m_v2fppp','m_l2v','m_l2c','m_chen'],
