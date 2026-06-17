@@ -7,3 +7,4 @@ node_modules/
 # session tokens or PII) and presentation drafts. Not part of the app.
 _audit/
 _ppt/
+_manual/

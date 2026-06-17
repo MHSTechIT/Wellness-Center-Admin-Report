@@ -143,6 +143,21 @@ thead { position: sticky; top: 0; z-index: 10; }
 .col-row th.sl2 { position: sticky; left: 150px; z-index: 5; background: var(--brand-bg); min-width: 60px; }
 .col-row th .arr { opacity: .35; margin-left: 3px; font-size: 8px; }
 
+/* Clickable L1/L2 Total counts — drill into Client view filtered to that bucket+program */
+.drill-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--brand);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(124, 58, 237, .45);
+  transition: color .12s, text-decoration-color .12s;
+}
+.drill-link:hover { color: var(--brand-2); text-decoration-color: var(--brand-2); }
+
 tbody tr { transition: background-color .12s, box-shadow .12s; }
 /* Stronger row-hover so the cursor's row is unmistakable. Exclude the sticky TOTAL row. */
 tbody tr:not(.total):hover td { background: #E5DDFC; }

@@ -44,6 +44,19 @@ function programClause(program) {
   return null;
 }
 
+/* Payment-status filter (matches the Period-view STATUS_COLS predicates exactly so a
+ * drill from a count reaches the same set of leads that count represents). */
+function paymentClause(payment) {
+  switch (payment) {
+    case 'enrolled':   return ENROLLED_PRED;
+    case 'full_paid':  return `l.payment_status_summary = 'paid_full'`;
+    case 'partial':    return `l.payment_status_summary = 'partial'`;
+    case 'instalment': return `(l.payment_plan IN ('inst_2','inst_3','installment') OR l.pstatus_inst3 IS NOT NULL)`;
+    case 'emi':        return `(l.payment_plan = 'emi' OR l.pstatus_emi IS NOT NULL)`;
+    default: return null;
+  }
+}
+
 /* ─────────────── TIMEZONE ───────────────
  * crm_lead.create_date is `timestamp WITHOUT time zone` holding UTC (Odoo convention).
  * To get the Indian calendar day we must FIRST tag it UTC, THEN convert to IST:
@@ -194,6 +207,8 @@ function buildWhere(filters, paramIdx) {
   if (filters.source_id){ conds.push(`l.source_id = $${i++}`); params.push(Number(filters.source_id)); }
   const progSql = programClause(filters.program);
   if (progSql) conds.push(progSql);
+  const paySql = paymentClause(filters.payment);
+  if (paySql) conds.push(paySql);
   if (filters.search) {
     conds.push(`(l.name ILIKE $${i} OR l.phone ILIKE $${i} OR l.email_from ILIKE $${i})`);
     params.push('%' + filters.search + '%'); i++;
@@ -229,34 +244,40 @@ export function buildPeriodQuery(period, filters) {
   };
 }
 
-/* Per-bucket telephony totals for the Period view — COMPLETE for every day in the window
- * (not gated by whether leads exist that day). Returns one row per bucket. call_log_summary.date
- * is a plain DATE (already the local calendar day), so we truncate it directly — no TZ conversion. */
+/* Per-bucket telephony totals for the Period view — COMPLETE for every day in the window.
+ *
+ * Sourced from `smartflo_call_log` (per-call records with `start_time` timestamps) so the
+ * range can be filtered by EXACT hour, not just whole days — picking 08:00–13:00 returns
+ * only those hours. (Previously we summed `call_log_summary`, a daily rollup, so any time
+ * range that touched a day pulled the whole day. Daily totals between the two sources
+ * have been verified identical, so this switch preserves prior numbers while adding
+ * time-of-day precision.)
+ *
+ * `start_time` is timestamp-without-tz holding UTC. To compare to an IST bound we shift
+ * by 5h30m (the fixed UTC↔IST offset). For bucketing we add 5h30m before date_trunc so the
+ * bucket key reflects the IST calendar day. */
 export function buildPeriodCallsQuery(period, filters) {
   const unit = ({ daily: 'day', weekly: 'week', monthly: 'month', yearly: 'year', custom: 'day' })[period] || 'day';
   const params = [];
   let i = 1;
-  // call_log_summary.date is a DATE (per-day rollup), so time-precise filtering rounds
-  // to whole days here — any day the range *touches* is included. The to-timestamp
-  // arrives as an exclusive upper bound from the route (date-only → next-day 00:00,
-  // datetime → the picked minute), so we step back 1µs before casting to date so a
-  // partial day still counts in.
-  let from, to;
-  if (filters.from) { from = `($${i++}::timestamp)::date`; params.push(filters.from); } else from = `(NOW() - INTERVAL '30 days')::date`;
-  if (filters.to)   { to   = `(($${i++}::timestamp - INTERVAL '1 microsecond')::date)`; params.push(filters.to); } else to = `(NOW())::date`;
+  let fromUtc, toUtc;
+  if (filters.from) { fromUtc = `($${i++}::timestamp - INTERVAL '5 hours 30 minutes')`; params.push(filters.from); }
+  else fromUtc = `(NOW() - INTERVAL '30 days')`;
+  if (filters.to)   { toUtc   = `($${i++}::timestamp - INTERVAL '5 hours 30 minutes')`; params.push(filters.to); }
+  else toUtc = `NOW()`;
   return {
     text: `
       SELECT
-        TO_CHAR(date_trunc('${unit}', date::timestamp), 'YYYY-MM-DD') AS bucket,
-        SUM(total_calls)::int                  AS tc,
-        SUM(unique_call_count)::int            AS uc,
-        SUM(total_connected_call_count)::int   AS cc,
-        SUM(incoming_call_count)::int          AS ic,
-        SUM(outgoing_call_count)::int          AS oc,
-        SUM(total_duration)::double precision  AS dur_sec
-      FROM call_log_summary
-      WHERE date >= ${from} AND date <= ${to}
-        AND user_id IN (
+        TO_CHAR(date_trunc('${unit}', start_time + INTERVAL '5 hours 30 minutes'), 'YYYY-MM-DD') AS bucket,
+        COUNT(*)::int                                       AS tc,
+        COUNT(DISTINCT customer_number)::int                AS uc,
+        COUNT(*) FILTER (WHERE call_connected = TRUE)::int  AS cc,
+        COUNT(*) FILTER (WHERE direction = 'inbound')::int  AS ic,
+        COUNT(*) FILTER (WHERE direction = 'outbound')::int AS oc,
+        COALESCE(SUM(duration), 0)::double precision        AS dur_sec
+      FROM smartflo_call_log
+      WHERE start_time >= ${fromUtc} AND start_time < ${toUtc}
+        AND agent_id IN (
           SELECT user_id FROM crm_team_member
           WHERE crm_team_id IN (${WALKIN_TEAMS.join(',')}) AND active = TRUE
         )
@@ -322,31 +343,36 @@ export function buildPersonQuery(filters) {
         ${leadWhere}
         GROUP BY l.user_id
       ),
+      -- Per-call source (smartflo_call_log.start_time) so telephony respects EXACT
+      -- time-of-day, not just whole days. start_time stores UTC in a timestamp-without-tz
+      -- column; $1/$2 are IST bounds, so we subtract the fixed 5h30m offset.
       calls AS (
         SELECT
-          user_id,
-          SUM(total_calls)::int                AS tc,
-          SUM(unique_call_count)::int          AS uc,
-          SUM(total_connected_call_count)::int AS cc,
-          SUM(incoming_call_count)::int        AS ic,
-          SUM(outgoing_call_count)::int        AS oc,
-          SUM(total_duration)::double precision AS dur_sec
-        FROM call_log_summary
-        -- per-day rollup: include any day touched by the range (see buildPeriodCallsQuery comment)
-        WHERE date >= ($1::timestamp)::date
-          AND date <= (($2::timestamp - INTERVAL '1 microsecond')::date)
-        GROUP BY user_id
+          agent_id AS user_id,
+          COUNT(*)::int                                       AS tc,
+          COUNT(DISTINCT customer_number)::int                AS uc,
+          COUNT(*) FILTER (WHERE call_connected = TRUE)::int  AS cc,
+          COUNT(*) FILTER (WHERE direction = 'inbound')::int  AS ic,
+          COUNT(*) FILTER (WHERE direction = 'outbound')::int AS oc,
+          COALESCE(SUM(duration), 0)::double precision        AS dur_sec
+        FROM smartflo_call_log
+        WHERE start_time >= ($1::timestamp - INTERVAL '5 hours 30 minutes')
+          AND start_time <  ($2::timestamp - INTERVAL '5 hours 30 minutes')
+          AND agent_id IS NOT NULL
+        GROUP BY agent_id
       ),
       called_leads AS (
         SELECT
           agent_id AS user_id,
           COUNT(DISTINCT customer_number)::int AS leads_called
         FROM smartflo_call_log
-        WHERE start_time >= $1::timestamp AND start_time < $2::timestamp AND agent_id IS NOT NULL
+        WHERE start_time >= ($1::timestamp - INTERVAL '5 hours 30 minutes')
+          AND start_time <  ($2::timestamp - INTERVAL '5 hours 30 minutes')
+          AND agent_id IS NOT NULL
         GROUP BY agent_id
       ),
-      -- Action-based attribution: transitions tracked by mail_tracking_value
-      -- Attribution by mail_message.create_uid (the user who logged the change).
+      -- Action-based attribution: transitions tracked by mail_tracking_value.
+      -- mail_message.create_date is UTC; shift the IST bounds by 5h30m for the comparison.
       transitions AS (
         SELECT
           mm.create_uid AS user_id,
@@ -359,7 +385,8 @@ export function buildPersonQuery(filters) {
         JOIN crm_lead l          ON l.id = mm.res_id
         WHERE imf.name = 'walkin_call_status' AND imf.model = 'crm.lead'
           AND l.lead_bucket = 'walkin'
-          AND mm.create_date >= $1::timestamp AND mm.create_date < $2::timestamp
+          AND mm.create_date >= ($1::timestamp - INTERVAL '5 hours 30 minutes')
+          AND mm.create_date <  ($2::timestamp - INTERVAL '5 hours 30 minutes')
         GROUP BY mm.create_uid
       ),
       -- Current pipeline: leads still in 'new' state per user (NOT date-filtered)

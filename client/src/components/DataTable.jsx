@@ -21,7 +21,7 @@ function PctCell({ value }) {
   );
 }
 
-function Cell({ col, row, period }) {
+function Cell({ col, row, period, onDrill }) {
   const v = row[col.k];
   if (col.k === 'period') {
     return <td className="sl"><span className={'pl ' + (PERIOD_PL[period] || 'pl-d')}>{v ?? '—'}</span></td>;
@@ -35,6 +35,40 @@ function Cell({ col, row, period }) {
     return <td>{n.toLocaleString('en-IN', { minimumFractionDigits: n < 100 ? 2 : 1, maximumFractionDigits: 2 })}</td>;
   }
   if (col.k === 'batch' && v && v !== '—') return <td><span className="tag tp">{v}</span></td>;
+  // Clickable drill cells — open the matching leads in the Client view (exportable).
+  // Only active in the Period view (Period rows have row.bucket; Person/Client don't).
+  // L1/L2 columns drill by `program`; PAYMENT columns drill by payment status.
+  if (onDrill && row.bucket && Number(v) > 0) {
+    const PROG_DRILL = { l1tot: 'L1', l2tot: 'L2' };
+    const PAY_DRILL  = { enr: 'enrolled', fp: 'full_paid', pp: 'partial', inst: 'instalment', emi: 'emi' };
+    const PAY_LABEL  = { enrolled: 'Enrolled', full_paid: 'Full Paid', partial: 'Part Paid', instalment: 'Instalment', emi: 'EMI' };
+    if (PROG_DRILL[col.k]) {
+      const program = PROG_DRILL[col.k];
+      return (
+        <td>
+          <button
+            type="button"
+            className="drill-link"
+            onClick={() => onDrill({ bucket: row.bucket, program })}
+            title={`View these ${fmtN(v)} ${program} leads (drills into Client view, exportable)`}
+          >{fmtN(v)}</button>
+        </td>
+      );
+    }
+    if (PAY_DRILL[col.k]) {
+      const payment = PAY_DRILL[col.k];
+      return (
+        <td>
+          <button
+            type="button"
+            className="drill-link"
+            onClick={() => onDrill({ bucket: row.bucket, payment })}
+            title={`View these ${fmtN(v)} ${PAY_LABEL[payment]} leads (drills into Client view, exportable)`}
+          >{fmtN(v)}</button>
+        </td>
+      );
+    }
+  }
   if (!v || v === 0 || v === '—') return <td className="zero">—</td>;
   if (col.tag) return <td><span className={'tag ' + col.tag}>{fmtN(v)}</span></td>;
   return <td>{typeof v === 'number' ? fmtN(v) : v}</td>;
@@ -80,7 +114,7 @@ function TotalCell({ col, totals }) {
   return <td>{fmtN(totals[col.k] || 0)}</td>;
 }
 
-export default function DataTable({ rows, visible, sortKey, period, loading }) {
+export default function DataTable({ rows, visible, sortKey, period, loading, onDrill }) {
   const cols = useMemo(() => COLS.filter((c) => visible[c.k]), [visible]);
 
   // Header-click sort overrides the dropdown sort. null = use `sortKey` prop.
@@ -180,7 +214,7 @@ export default function DataTable({ rows, visible, sortKey, period, loading }) {
               <>
                 {pageRows.map((r, i) => (
                   <tr key={i}>
-                    {cols.map((c) => <Cell key={c.k} col={c} row={r} period={period} />)}
+                    {cols.map((c) => <Cell key={c.k} col={c} row={r} period={period} onDrill={onDrill} />)}
                   </tr>
                 ))}
                 <tr className="total">

@@ -243,6 +243,7 @@ app.get('/api/report', requireAuth, async (req, res) => {
       from: fromTs, to: toTs,
       team_id: req.query.team_id, user_id: req.query.user_id, hc_id: req.query.hc_id,
       batch: req.query.batch, source_id: req.query.source_id, program: req.query.program,
+      payment: req.query.payment,
       search: req.query.search, limit: req.query.limit,
     };
 

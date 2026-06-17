@@ -13,7 +13,7 @@ import * as api from './lib/api.js';
 import * as auth from './lib/auth.js';
 
 const initialVisible = Object.fromEntries(COLS.map((c) => [c.k, true]));
-const initialFilters = { team_id: '', user_id: '', hc_id: '', batch: '', source_id: '', program: '', search: '' };
+const initialFilters = { team_id: '', user_id: '', hc_id: '', batch: '', source_id: '', program: '', payment: '', search: '' };
 
 /* Sort dropdown — a single, fixed set of options. Each `k` is a real row field (or the
  * special 'date' bucket key) handled by DataTable's sort logic, so all options work. */
@@ -129,6 +129,28 @@ export default function App() {
 
   useEffect(() => { loadReport(); }, [loadReport]);
 
+  /* Drill from a Period-view count cell into the Client view, filtered to that bucket's
+   * date range plus either the program (L1/L2 Total) or the payment status (Enrolled,
+   * Full Paid, Part Paid, Instalment, EMI). The existing Export button then downloads them. */
+  const drillIntoClient = useCallback(({ bucket, program, payment }) => {
+    if (!bucket) return;
+    const d = new Date(bucket + 'T00:00:00Z');
+    let from = bucket, to = bucket;
+    if (period === 'monthly') {
+      to = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 0)).toISOString().slice(0, 10);
+    } else if (period === 'weekly') {
+      const end = new Date(d); end.setUTCDate(end.getUTCDate() + 6);
+      to = end.toISOString().slice(0, 10);
+    } else if (period === 'yearly') {
+      to = d.getUTCFullYear() + '-12-31';
+    }
+    setView('client');
+    setPeriod('custom');
+    setCustomRange({ from, to });
+    // Set whichever drill dimension was used; clear the other so they don't compound unexpectedly.
+    setFilters((f) => ({ ...f, program: program || '', payment: payment || '' }));
+  }, [period]);
+
   /* Auth handlers */
   const handleLogout = useCallback(async () => {
     try { await auth.logout(); } catch {}
@@ -152,10 +174,34 @@ export default function App() {
     setVisible(next);
   }, []);
 
-  /* Export */
+  /* Export — Client view always includes the lead-identifying columns (Name, Phone,
+   * Salesperson, Date of Joining) even when those columns aren't shown in the table,
+   * so a drill-down export is actionable on its own (the previous version dropped them). */
   const exportCSV = useCallback(() => {
-    const cols = COLS.filter((c) => visible[c.k]);
-    const head = cols.map((c) => c.l).join(',');
+    const visibleCols = COLS.filter((c) => visible[c.k]);
+    const isClient = view === 'client';
+
+    // Lead-identifying columns set by the server only in the Client view (one row = one lead).
+    const LEAD_EXTRAS = [
+      { k: 'phone',       l: 'Lead Number (Phone)' },
+      { k: 'salesperson', l: 'Salesperson' },
+      { k: 'doi',         l: 'Date of Joining' },
+    ];
+
+    let cols = visibleCols;
+    if (isClient) {
+      // Drop any extras that somehow are already visible (defensive), then insert them
+      // right after the Name (period) column so the CSV reads Name, Phone, Salesperson, DOI, …
+      const known = new Set(cols.map((c) => c.k));
+      const extras = LEAD_EXTRAS.filter((e) => !known.has(e.k));
+      const periodIdx = cols.findIndex((c) => c.k === 'period');
+      cols = [...cols];
+      if (periodIdx >= 0) cols.splice(periodIdx + 1, 0, ...extras);
+      else cols = [...extras, ...cols];
+    }
+
+    // In Client view rename the displayed "Period / Name" header to the more precise "Lead Name".
+    const head = cols.map((c) => (isClient && c.k === 'period' ? 'Lead Name' : c.l)).join(',');
     const body = reportData.rows.map((r) => cols.map((c) => {
       const v = r[c.k];
       if (v == null) return '';
@@ -165,9 +211,11 @@ export default function App() {
     const blob = new Blob([head + '\n' + body], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url; a.download = `mhs_${view}_${period}_${Date.now()}.csv`;
+    const drill = isClient ? (filters.program || filters.payment || '') : '';
+    const tag = drill ? `client_${drill}` : `${view}_${period}`;
+    a.href = url; a.download = `mhs_${tag}_${Date.now()}.csv`;
     a.click(); URL.revokeObjectURL(url);
-  }, [reportData.rows, visible, view, period]);
+  }, [reportData.rows, visible, view, period, filters.program, filters.payment]);
 
   /* ── Render ── */
   if (authChecking) {
@@ -249,7 +297,7 @@ export default function App() {
         </select>
       </div>
 
-      <DataTable rows={reportData.rows} visible={visible} sortKey={sortKey} period={period} loading={loading} />
+      <DataTable rows={reportData.rows} visible={visible} sortKey={sortKey} period={period} loading={loading} onDrill={drillIntoClient} />
 
       <ColumnPanel
         open={colPanelOpen}
